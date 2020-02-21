@@ -1,0 +1,10 @@
+#服务的提供者,是eureka-server的客户端....
+server:
+  port: 8762
+spring:
+  application:
+    name: ribbon-server-provider
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/

@@ -3,21 +3,20 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>SpringCloudDemo</artifactId>
+        <artifactId>Ribbon</artifactId>
         <groupId>com.demo.springcloud</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>Ribbon</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>eureka_server</module>
-        <module>service_provider01</module>
-        <module>service_provider02</module>
-        <module>service_consumer01</module>
-        <module>service_consumer02</module>
-    </modules>
+    <artifactId>service_provider02</artifactId>
 
+    <!--eureka客户端依赖包-->
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-eureka</artifactId>
+        </dependency>
+    </dependencies>
 
 </project>
