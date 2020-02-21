@@ -1,0 +1,11 @@
+#进行eureka客户端的配置
+server:
+  port: 8763
+spring:
+  application:
+    name: eureka-client #在微服务的配置中,应用程序的名称,如果带分割线,一定要用中划线,不要使用下划线!!!
+#eureka客户单的配置
+eureka:
+  client:
+    service-url:  #指明注册中心服务端的地址
+      defaultZone: http://localhost:8761/eureka/ #注意:即使配置了eureka集群,在客户端引用这里,也只需要配置一个服务器地址就可以,eureka集群会自动进行其他服务器配置信息的拉取
