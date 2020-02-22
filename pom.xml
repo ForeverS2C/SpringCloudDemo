@@ -11,6 +11,7 @@
     <modules>
         <module>Eureka</module>
         <module>Ribbon</module>
+        <module>Feign</module>
     </modules>
 
     <!--把项目改造成spring-boot,因为spring-cloud需要依赖spring-boot-->
